@@ -15,8 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button s_number = findViewById(R.id.button_num);
-        Button s_byte = findViewById(R.id.button_num);
-        s_number.setText("Search for boring Number");
+        s_number.setText("Search for boring numbers!");
         s_number.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -24,17 +23,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        s_byte.setText("Search for ByteDance Products");
+        Button s_byte = findViewById(R.id.button_byte);
+        s_byte.setText("Search for ByteDance products!");
         s_byte.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SearchNumberActivity.class);
+                Intent intent = new Intent(MainActivity.this, SearchBDActivity.class);
                 startActivity(intent);
             }
         });
-
     }
-
-
-
 }
