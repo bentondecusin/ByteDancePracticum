@@ -25,8 +25,10 @@ public class SearchAdapter extends RecyclerView.Adapter<TextViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull TextViewHolder holder, int position) {
         holder.bind(mItems.get(position), position);
-        if (position % 2 == 0) holder.getParent().setBackgroundColor(Color.parseColor("#2F7BED"));
-        else holder.getParent().setBackgroundColor(Color.parseColor("#03dac4"));
+        if (position % 4 == 0) holder.getParent().setBackgroundColor(Color.parseColor("#93e3dc"));
+        else if (position % 4 == 1) holder.getParent().setBackgroundColor(Color.parseColor("#57c6d0"));
+        else if (position % 4 == 2) holder.getParent().setBackgroundColor(Color.parseColor("#4c8cf3"));
+        else holder.getParent().setBackgroundColor(Color.parseColor("#385bad"));
 
     }
 
