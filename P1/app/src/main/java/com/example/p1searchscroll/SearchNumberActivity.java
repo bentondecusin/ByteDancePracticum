@@ -7,23 +7,27 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.EditText;
 
+import org.json.JSONArray;
+
+import java.io.File;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class SearchNumberActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private EditText mEditText;
     private SearchNumberAdapter mSearchNumberAdapter = new SearchNumberAdapter();
     private boolean cantonese = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_number);
-
         mRecyclerView = findViewById(R.id.rv);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setAdapter(mSearchNumberAdapter);
-
         mEditText = findViewById(R.id.editTextSearch);
 
         List<String> items = new ArrayList<>();

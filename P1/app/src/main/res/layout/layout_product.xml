@@ -5,20 +5,24 @@
     android:id="@+id/text_wrapper"
 
     android:layout_width="match_parent"
-    android:layout_height="60dp"
+    android:layout_height="70dp"
     android:orientation="horizontal"
     android:fadingEdge="horizontal">
 
     <ImageView
         android:id="@+id/productImage"
-        android:layout_height="60dp"
         android:layout_width="60dp"
-/>
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
 
     <TextView
         android:id="@+id/productText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:text="TextView" />
 </LinearLayout>

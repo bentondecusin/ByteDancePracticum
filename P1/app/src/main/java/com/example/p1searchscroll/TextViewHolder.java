@@ -14,7 +14,6 @@ public class TextViewHolder extends RecyclerView.ViewHolder implements View.OnCl
     private boolean cantonese = false;
     public TextViewHolder (@NonNull View itemView){
         super(itemView);
-    //    mTextView = new TextView();
         mTextView = itemView.findViewById(R.id.text);
         parent = itemView.findViewById(R.id.text_wrapper);
         itemView.setOnClickListener(this);
