@@ -4,15 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.graphics.Color;
 import android.os.Bundle;
+import android.widget.EditText;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class SearchNumberActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
-    private SearchAdapter mSearchAdapter = new SearchAdapter();
+    private EditText mEditText;
+    private SearchNumberAdapter mSearchNumberAdapter = new SearchNumberAdapter();
     private boolean cantonese = true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,14 +22,16 @@ public class SearchNumberActivity extends AppCompatActivity {
 
         mRecyclerView = findViewById(R.id.rv);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        mRecyclerView.setAdapter(mSearchAdapter);
+        mRecyclerView.setAdapter(mSearchNumberAdapter);
+
+        mEditText = findViewById(R.id.editTextSearch);
 
         List<String> items = new ArrayList<>();
         for(int i = 0; i < 100; i++){
             if (cantonese) items.add("呢個係第" + String.valueOf(i) + "行");
             else items.add("这个是第" + String.valueOf(i) + "行");
         }
-        mSearchAdapter.notifyItems(items);
+        mSearchNumberAdapter.notifyItems(items);
     }
 
     @Override

@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SearchAdapter extends RecyclerView.Adapter<TextViewHolder> {
+public class SearchNumberAdapter extends RecyclerView.Adapter<TextViewHolder> {
     @NonNull
     private List<String> mItems = new ArrayList<>();
 
