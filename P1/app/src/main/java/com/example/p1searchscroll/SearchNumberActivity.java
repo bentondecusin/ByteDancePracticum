@@ -5,7 +5,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.Switch;
 
 import org.json.JSONArray;
 
@@ -20,6 +22,7 @@ public class SearchNumberActivity extends AppCompatActivity {
     private EditText mEditText;
     private SearchNumberAdapter mSearchNumberAdapter = new SearchNumberAdapter();
     private boolean cantonese = true;
+    private Switch mCantoneseSwitch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +32,19 @@ public class SearchNumberActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setAdapter(mSearchNumberAdapter);
         mEditText = findViewById(R.id.editTextSearch);
-
+        mCantoneseSwitch = findViewById(R.id.cantoneseSwitch);
+        mCantoneseSwitch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                cantonese = !cantonese;
+                List<String> items = new ArrayList<>();
+                for(int i = 0; i < 100; i++){
+                    if (cantonese) items.add("呢個係第" + String.valueOf(i) + "行");
+                    else items.add("这个是第" + String.valueOf(i) + "行");
+                }
+                mSearchNumberAdapter.notifyItems(items);
+            }
+        });
         List<String> items = new ArrayList<>();
         for(int i = 0; i < 100; i++){
             if (cantonese) items.add("呢個係第" + String.valueOf(i) + "行");

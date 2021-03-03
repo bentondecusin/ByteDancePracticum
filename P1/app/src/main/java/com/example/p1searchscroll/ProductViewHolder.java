@@ -26,9 +26,9 @@ import android.net.Uri;
 public class ProductViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
     private TextView mTextView;
     private ImageView mImageView;
-    private int idx;
+    private int imgID;
     private Context context;
-    private List<Integer> imgs= new ArrayList<>();
+    private Product product;
     public ProductViewHolder(@NonNull View itemView){
         super(itemView);
         mTextView = itemView.findViewById(R.id.productText);
@@ -43,14 +43,18 @@ public class ProductViewHolder extends RecyclerView.ViewHolder implements View.O
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(v.getContext(), ProductViewActivity.class);
-        intent.putExtra("extra", mTextView.getText());
+        intent.putExtra("title", product.getName());
+        intent.putExtra("imgID", imgID);
+        intent.putExtra("description", product.getDescription());
         v.getContext().startActivity(intent);
     }
 
     public void bind(int imgId, Product product) {
+        this.product = product;
         String title = product.getName();
         mTextView.setText(title);
-       mImageView.setImageResource(imgId);
+        this.imgID = imgId;
+        mImageView.setImageResource(imgId);
     }
 
 }

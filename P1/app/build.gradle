@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.p1searchscroll"
+        applicationId 'com.bcly.p1searchscroll'
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
