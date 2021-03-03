@@ -19,7 +19,7 @@ public class ProductViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_product_view);
         TextView mTitle = findViewById(R.id.titleTextView);
         TextView mDescription = findViewById(R.id.descriptionTextView);
-        ImageView mImage = findViewById(R.id.prodcutImageView);
+        ImageView mImage = findViewById(R.id.productImageView);
 
         mTitle.setText(title);
         mDescription.setText(description);

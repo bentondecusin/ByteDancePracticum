@@ -5,8 +5,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Switch;
 
 import org.json.JSONArray;
@@ -23,6 +28,7 @@ public class SearchNumberActivity extends AppCompatActivity {
     private SearchNumberAdapter mSearchNumberAdapter = new SearchNumberAdapter();
     private boolean cantonese = true;
     private Switch mCantoneseSwitch;
+    private ImageButton mCancelButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +37,24 @@ public class SearchNumberActivity extends AppCompatActivity {
         mRecyclerView = findViewById(R.id.rv);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setAdapter(mSearchNumberAdapter);
+
         mEditText = findViewById(R.id.editTextSearch);
+        mEditText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                ;
+            }
+        });
+
         mCantoneseSwitch = findViewById(R.id.cantoneseSwitch);
         mCantoneseSwitch.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,15 +65,29 @@ public class SearchNumberActivity extends AppCompatActivity {
                     if (cantonese) items.add("呢個係第" + String.valueOf(i) + "行");
                     else items.add("这个是第" + String.valueOf(i) + "行");
                 }
+                if (cantonese) mEditText.setHint("請鍵入");
+                else mEditText.setHint("请输入");
                 mSearchNumberAdapter.notifyItems(items);
             }
         });
+
         List<String> items = new ArrayList<>();
         for(int i = 0; i < 100; i++){
             if (cantonese) items.add("呢個係第" + String.valueOf(i) + "行");
             else items.add("这个是第" + String.valueOf(i) + "行");
         }
         mSearchNumberAdapter.notifyItems(items);
+
+        mCancelButton = findViewById(R.id.cancelImageButton);
+        mCancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mEditText.setText("");
+            }
+        });
+
+
+
     }
 
     @Override
