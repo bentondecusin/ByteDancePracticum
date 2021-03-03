@@ -5,7 +5,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Switch;
 
 import org.json.JSONArray;
@@ -21,6 +25,9 @@ public class SearchBDActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private EditText mEditText;
     private SearchProductAdapter mSearchProductAdapter = new SearchProductAdapter();
+    private ImageButton mCancelButton;
+    private List<Product> items = new ArrayList<>();
+    private List<Product> currentList = new ArrayList<>();
     private String byteInfoString = "[\n" +
             "  {\n" +
             "    \"id\": \"1\", \n "+
@@ -91,7 +98,7 @@ public class SearchBDActivity extends AppCompatActivity {
             "]";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        List<Product> items = new ArrayList<>();
+        items = new ArrayList<>();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_b_d);
         mRecyclerView = findViewById(R.id.rv_product);
@@ -113,6 +120,34 @@ public class SearchBDActivity extends AppCompatActivity {
             }
         }
         mSearchProductAdapter.notifyItems(items);
+
+        mEditText = findViewById(R.id.editTextSearch);
+        mEditText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                currentList = new ArrayList<>();
+                for(Product product : items){
+                    if (product.getName().contains(s)) currentList.add(product);
+                }
+                mSearchProductAdapter.notifyItems(currentList);
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+            }
+        });
+        mCancelButton = findViewById(R.id.cancelImageButton);
+        mCancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mEditText.setText("");
+            }
+        });
 
     }
 }

@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -29,6 +31,8 @@ public class SearchNumberActivity extends AppCompatActivity {
     private boolean cantonese = true;
     private Switch mCantoneseSwitch;
     private ImageButton mCancelButton;
+    private List<String> items = new ArrayList<>();
+    private List<String> currentList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,12 +50,16 @@ public class SearchNumberActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+                currentList = new ArrayList<>();
+                for(String string : items){
+                    if (string.contains(s)) currentList.add(string);
+                }
+                mSearchNumberAdapter.notifyItems(currentList);
 
             }
 
             @Override
             public void afterTextChanged(Editable s) {
-                ;
             }
         });
 
@@ -60,7 +68,7 @@ public class SearchNumberActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 cantonese = !cantonese;
-                List<String> items = new ArrayList<>();
+                items = new ArrayList<>();
                 for(int i = 0; i < 100; i++){
                     if (cantonese) items.add("呢個係第" + String.valueOf(i) + "行");
                     else items.add("这个是第" + String.valueOf(i) + "行");
@@ -68,10 +76,11 @@ public class SearchNumberActivity extends AppCompatActivity {
                 if (cantonese) mEditText.setHint("請鍵入");
                 else mEditText.setHint("请输入");
                 mSearchNumberAdapter.notifyItems(items);
+                mEditText.setText(mEditText.getText());
             }
         });
 
-        List<String> items = new ArrayList<>();
+        items = new ArrayList<>();
         for(int i = 0; i < 100; i++){
             if (cantonese) items.add("呢個係第" + String.valueOf(i) + "行");
             else items.add("这个是第" + String.valueOf(i) + "行");
