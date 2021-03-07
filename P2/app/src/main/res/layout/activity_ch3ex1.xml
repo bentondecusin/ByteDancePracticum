@@ -16,7 +16,7 @@
         android:layout_gravity="center"
         app:lottie_autoPlay="false"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/material_wave_loading"
+        app:lottie_rawRes="@raw/muzli"
         />
 
     <LinearLayout
