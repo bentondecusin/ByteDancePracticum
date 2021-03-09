@@ -27,9 +27,9 @@ public class Ch3Ex3Activity extends AppCompatActivity {
     private List<List<String>> contacts = new ArrayList<List<String>>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        String[] fam = new String[]{"Family", "Dad", "Mom", "Dog"};
-        String[] fren = new String[]{"Friends", "李二狗", "小翠", "Dog"};
-        String[] work = new String[]{"Colleague", "老板"};
+        String[] fam = new String[]{"Family", "Dad", "Mom", "Auntie Marie","Uncle Joe","Auntie Joan", "Dog"};
+        String[] fren = new String[]{"Friends", "李二狗", "小翠", "Dawg", "Jake", "Kido San"};
+        String[] work = new String[]{"Colleague", "老板", "字节HR小姐姐"};
         contacts.add(Arrays.asList(fam));
         contacts.add(Arrays.asList(fren));
         contacts.add(Arrays.asList(work));
@@ -40,20 +40,20 @@ public class Ch3Ex3Activity extends AppCompatActivity {
         vp.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
-                return new PlaceholderFragment(contacts.get(position));
+                return new PlaceholderFragment(contacts.get(position).subList(1,contacts.get(position).size()));
             }
 
             @Override
             public int getCount() {
-                return 3;
+                return contacts.size();
             }
 
             @Override
             public CharSequence getPageTitle(int position){
                 return (CharSequence) contacts.get(position).get(0);
             }
-        });
 
+        });
         // TODO: ex3-2, 添加 TabLayout 支持 Tab
         TabLayout tl = findViewById(R.id.tab_layout);
         tl.setupWithViewPager(vp);
