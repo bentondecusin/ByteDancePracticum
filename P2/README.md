@@ -1,6 +1,6 @@
 # Chapter Two 第二章
 
-### This App has 3 parts. 這個應用程式有三个部分
+### This App has 3 parts. 這個應用程式有三個部分
 
 1. Implementation of loading animation. The animation can be set to automomous or manual mode. In manual mode the user can set the progress of the animation
 
