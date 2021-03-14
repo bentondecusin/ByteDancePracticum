@@ -4,12 +4,15 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.os.Handler;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.Nullable;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.logging.LogRecord;
 
 public class Clock extends View {
 
@@ -90,6 +93,9 @@ public class Clock extends View {
     protected void onDraw(final Canvas canvas) {
         super.onDraw(canvas);
 
+        Handler handler = new Handler();
+
+
         mWidth = getHeight() > getWidth() ? getWidth() : getHeight();
 
         int halfWidth = mWidth / 2;
@@ -104,8 +110,15 @@ public class Clock extends View {
         drawDegrees(canvas);
         drawHoursValues(canvas);
         drawNeedles(canvas);
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // post again
+                Log.d(TAG, "run: postDelayed invoked");
+                invalidate();
+            }
+        }, 10);
 
-        // todo 1: 每一秒刷新一次，让指针动起来
 
     }
 
@@ -116,6 +129,7 @@ public class Clock extends View {
         paint.setStrokeCap(Paint.Cap.ROUND);
         paint.setStrokeWidth(mWidth * DEFAULT_DEGREE_STROKE_WIDTH);
         paint.setColor(degreesColor);
+
 
         int rPadded = mCenterX - (int) (mWidth * 0.01f);
         int rEnd = mCenterX - (int) (mWidth * 0.05f);
@@ -162,11 +176,12 @@ public class Clock extends View {
         Date now = calendar.getTime();
         int nowHours = now.getHours();
         int nowMinutes = now.getMinutes();
-        int nowSeconds = now.getSeconds();
+        float nowSeconds = (calendar.getTimeInMillis() % 60000) / 1000.0f;
         // 画秒针
         drawPointer(canvas, 2, nowSeconds);
         // 画分针
         // todo 2: 画分针
+        drawPointer(canvas, 1, nowMinutes);
 
         // 画时针
         int part = nowMinutes / 12;
@@ -190,6 +205,38 @@ public class Clock extends View {
                 break;
             case 1:
                 // todo 3: 画分针，设置分针的颜色
+                degree = value * UNIT_DEGREE;
+                mNeedlePaint.setColor(Color.BLUE);
+                pointerHeadXY = getPointerHeadXY(MINUTE_POINTER_LENGTH, degree);
+                break;
+            case 2:
+                degree = value * UNIT_DEGREE;
+                mNeedlePaint.setColor(Color.GREEN);
+                pointerHeadXY = getPointerHeadXY(SECOND_POINTER_LENGTH, degree);
+                break;
+        }
+
+
+        canvas.drawLine(mCenterX, mCenterY, pointerHeadXY[0], pointerHeadXY[1], mNeedlePaint);
+    }
+
+    private void drawPointer(Canvas canvas, int pointerType, float value) {
+
+        float degree;
+        float[] pointerHeadXY = new float[2];
+
+        mNeedlePaint.setStrokeWidth(mWidth * DEFAULT_DEGREE_STROKE_WIDTH);
+        switch (pointerType) {
+            case 0:
+                degree = value * UNIT_DEGREE;
+                mNeedlePaint.setColor(Color.WHITE);
+                pointerHeadXY = getPointerHeadXY(HOUR_POINTER_LENGTH, degree);
+                break;
+            case 1:
+                // todo 3: 画分针，设置分针的颜色
+                degree = value * UNIT_DEGREE;
+                mNeedlePaint.setColor(Color.BLUE);
+                pointerHeadXY = getPointerHeadXY(MINUTE_POINTER_LENGTH, degree);
                 break;
             case 2:
                 degree = value * UNIT_DEGREE;
