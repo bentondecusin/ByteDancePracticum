@@ -14,8 +14,8 @@ public interface IApi {
 
     //TODO 4
     // 补全所有注解
-    Call<UploadResponse> submitMessage(String studentId,
-                                     String extraValue,
+    Call<UploadResponse> submitMessage(@Query("student_id") String studentId,
+                                       @Query("extraValue") String extraValue,
                                      MultipartBody.Part from,
                                      MultipartBody.Part to,
                                      MultipartBody.Part content,

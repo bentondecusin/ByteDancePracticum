@@ -14,9 +14,16 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bytedance.practice5.model.UploadResponse;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.io.InputStream;
+
+import retrofit2.Call;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
+import com.bytedance.practice5.Constants;
 
 public class UploadActivity extends AppCompatActivity {
     private static final String TAG = "chapter5";
@@ -75,6 +82,17 @@ public class UploadActivity extends AppCompatActivity {
     }
 
     private void initNetwork() {
+        final Retrofit retrofit = new Retrofit.Builder().
+                baseUrl(Constants.BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                IApi service = retrofit.create(IApi.class);
+                Call<UploadResponse> call = service.submitMessage(Constants.STUDENT_ID, from, to,  )
+            }
+        });
         //TODO 3
         // 创建Retrofit实例
         // 生成api对象
