@@ -1,0 +1,235 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:2:1-42:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/956fb4ed48b28f646080bcfc249066ea/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/645a4ad82691d5e2cdb8094d6f8365a3/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.fresco:fresco:0.12.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/f03fcb776dce933e73cb175517b417a0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/dc398d8aeb3e89a559dbb83cfb5d4bfc/AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/68cffc8917a4670843693f4ebb4965bc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/d87e5f545828dfbb32bf1713dbd0a6f1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/badc825bb25734b7389f102616c90d86/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/b9860ed1d6789101cfa917e8edc25ddd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/5879c112d6978c866a05fed27418f14a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/147bdbb7090666055b3c2bc475900f4c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/fb824529bfa65794bcc1dcfd3c28185e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/35ae9ca7f572786473c42507e9f8f823/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/5805b4c6d0f444e137e35018accc56f9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/41142808c4ed7822195035a142ea9146/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/2dfc8d663bb0f71fa6a4f2a970e0e395/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/c31d6cef07eafc3bd1b359482bca6cbf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/c25d33153f934e845a3e007dba9bd556/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/02991dc17cec56ee8592d19145ca8d4a/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/3d133230c2e89c2019dffea9d8a15b97/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/7c009e5771aa946746b323b406d57eb3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/830e190758ae8aa60ed1ccc8a1bbe5b5/AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/cfc8fa2fb08bed2df56aac73da7830a2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/43e22f98c2eac8190297df827d27eda5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/7807b33d185cc0dae49efe5de493adcc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/8e1d500436b17c2777806bdfad0c0662/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/5fb1fa09923ca7070089a21ec1d52f4e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/f8f563360124aae6d78db5aa961d57a4/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/ad553bc54c0356d90a98aa9b62af433b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/9a6fe692e8e5de9b9a6c79276f2f5ad6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/5cec0e7057053799652a6e3893077337/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:drawee:0.12.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/7e821dec676e0a228a6cd8caf3fc67c9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:0.12.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/4052cba551306eec2499e48c2ac04a25/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:0.12.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/78712e9d64518a2bbf4e7613e2bb5cbe/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:0.12.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/836f11824ad59bc470cf2cf801c68f67/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:2:1-42:12
+	package
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:4:5-44
+		INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:2:1-42:12
+		INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:2:1-42:12
+		INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:9:22-77
+application
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:11:5-40:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/645a4ad82691d5e2cdb8094d6f8365a3/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/645a4ad82691d5e2cdb8094d6f8365a3/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/dc398d8aeb3e89a559dbb83cfb5d4bfc/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/dc398d8aeb3e89a559dbb83cfb5d4bfc/AndroidManifest.xml:10:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/02991dc17cec56ee8592d19145ca8d4a/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/02991dc17cec56ee8592d19145ca8d4a/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/3d133230c2e89c2019dffea9d8a15b97/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/3d133230c2e89c2019dffea9d8a15b97/AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/830e190758ae8aa60ed1ccc8a1bbe5b5/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/830e190758ae8aa60ed1ccc8a1bbe5b5/AndroidManifest.xml:9:5-20
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/02991dc17cec56ee8592d19145ca8d4a/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:13:9-41
+	tools:ignore
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:16:9-48
+	android:allowBackup
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:14:9-40
+activity#com.domker.study.androidstudy.MainActivity
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:17:9-23:20
+	android:name
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:17:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:18:13-22:29
+action#android.intent.action.MAIN
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:21:27-74
+activity#com.domker.study.androidstudy.PermissionActivity
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:24:9-56
+	android:name
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:24:19-53
+activity#com.domker.study.androidstudy.CanvasActivity
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:25:9-52
+	android:name
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:25:19-49
+activity#com.domker.study.androidstudy.ImageActivity
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:26:9-51
+	android:name
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:26:19-48
+activity#com.domker.study.androidstudy.FrescoImageActivity
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:27:9-57
+	android:name
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:27:19-54
+activity#com.domker.study.androidstudy.VideoActivity
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:28:9-51
+	android:name
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:28:19-48
+activity#com.domker.study.androidstudy.GlideActivity
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:29:9-51
+	android:name
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:29:19-48
+activity#com.domker.study.androidstudy.MediaPlayerActivity
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:30:9-57
+	android:name
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:30:19-54
+provider#android.support.v4.content.FileProvider
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:31:9-39:20
+	android:grantUriPermissions
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:35:13-47
+	android:authorities
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:33:13-77
+	android:exported
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:32:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:36:13-38:58
+	android:resource
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:38:17-55
+	android:name
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml:37:17-67
+uses-sdk
+INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml
+INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/956fb4ed48b28f646080bcfc249066ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/956fb4ed48b28f646080bcfc249066ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/645a4ad82691d5e2cdb8094d6f8365a3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/645a4ad82691d5e2cdb8094d6f8365a3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:0.12.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/f03fcb776dce933e73cb175517b417a0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:0.12.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/f03fcb776dce933e73cb175517b417a0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/dc398d8aeb3e89a559dbb83cfb5d4bfc/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/dc398d8aeb3e89a559dbb83cfb5d4bfc/AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/68cffc8917a4670843693f4ebb4965bc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/68cffc8917a4670843693f4ebb4965bc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/d87e5f545828dfbb32bf1713dbd0a6f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/d87e5f545828dfbb32bf1713dbd0a6f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/badc825bb25734b7389f102616c90d86/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/badc825bb25734b7389f102616c90d86/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/b9860ed1d6789101cfa917e8edc25ddd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/b9860ed1d6789101cfa917e8edc25ddd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/5879c112d6978c866a05fed27418f14a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/5879c112d6978c866a05fed27418f14a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/147bdbb7090666055b3c2bc475900f4c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/147bdbb7090666055b3c2bc475900f4c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/fb824529bfa65794bcc1dcfd3c28185e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/fb824529bfa65794bcc1dcfd3c28185e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/35ae9ca7f572786473c42507e9f8f823/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/35ae9ca7f572786473c42507e9f8f823/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/5805b4c6d0f444e137e35018accc56f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/5805b4c6d0f444e137e35018accc56f9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/41142808c4ed7822195035a142ea9146/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/41142808c4ed7822195035a142ea9146/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/2dfc8d663bb0f71fa6a4f2a970e0e395/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/2dfc8d663bb0f71fa6a4f2a970e0e395/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/c31d6cef07eafc3bd1b359482bca6cbf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/c31d6cef07eafc3bd1b359482bca6cbf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/c25d33153f934e845a3e007dba9bd556/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/c25d33153f934e845a3e007dba9bd556/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/02991dc17cec56ee8592d19145ca8d4a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/02991dc17cec56ee8592d19145ca8d4a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/3d133230c2e89c2019dffea9d8a15b97/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/3d133230c2e89c2019dffea9d8a15b97/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/7c009e5771aa946746b323b406d57eb3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/7c009e5771aa946746b323b406d57eb3/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/830e190758ae8aa60ed1ccc8a1bbe5b5/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/830e190758ae8aa60ed1ccc8a1bbe5b5/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/cfc8fa2fb08bed2df56aac73da7830a2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/cfc8fa2fb08bed2df56aac73da7830a2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/43e22f98c2eac8190297df827d27eda5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/43e22f98c2eac8190297df827d27eda5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/7807b33d185cc0dae49efe5de493adcc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/7807b33d185cc0dae49efe5de493adcc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/8e1d500436b17c2777806bdfad0c0662/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/8e1d500436b17c2777806bdfad0c0662/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/5fb1fa09923ca7070089a21ec1d52f4e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/5fb1fa09923ca7070089a21ec1d52f4e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/f8f563360124aae6d78db5aa961d57a4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/f8f563360124aae6d78db5aa961d57a4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/ad553bc54c0356d90a98aa9b62af433b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/ad553bc54c0356d90a98aa9b62af433b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/9a6fe692e8e5de9b9a6c79276f2f5ad6/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/9a6fe692e8e5de9b9a6c79276f2f5ad6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/5cec0e7057053799652a6e3893077337/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/5cec0e7057053799652a6e3893077337/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:drawee:0.12.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/7e821dec676e0a228a6cd8caf3fc67c9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:0.12.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/7e821dec676e0a228a6cd8caf3fc67c9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:0.12.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/4052cba551306eec2499e48c2ac04a25/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:0.12.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/4052cba551306eec2499e48c2ac04a25/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:0.12.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/78712e9d64518a2bbf4e7613e2bb5cbe/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:0.12.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/78712e9d64518a2bbf4e7613e2bb5cbe/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:0.12.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/836f11824ad59bc470cf2cf801c68f67/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:0.12.0] /Users/bcyl/.gradle/caches/transforms-2/files-2.1/836f11824ad59bc470cf2cf801c68f67/AndroidManifest.xml:5:5-7:41
+INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml
+INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml
+		ADDED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/bcyl/ByteDancePracticum/Homework-Chapter-7/app/src/main/AndroidManifest.xml
